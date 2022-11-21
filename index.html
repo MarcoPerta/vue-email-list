@@ -20,7 +20,7 @@
   <div id='app'>
     <button class="btn btn-primary" @click="inizia">Gioca</button>
     <ul>
-        <li>{{ emailList }</li>
+        <li v-if="(emailList.length == 10 ) ? success =  true : success = false" v-for="element in emailList">{{ element }}</li>
     </ul>
   </div>
 
